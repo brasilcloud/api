@@ -33,7 +33,7 @@ app.use((error, request, response, next) => {
     });
 });
 
-const PORT = 3000;
+const PORT = process.env.PORTA;
 app.listen(PORT, () => {
-    console.log(`Server is running on Port ${PORT}`);
+    response.send(`Server is running on Port ${PORT}`);
 });

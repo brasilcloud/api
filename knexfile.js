@@ -4,10 +4,10 @@ module.exports = {
   development: {
     client: 'mysql',
     connection: {
-      host: 'mysql-ag-br1-1.hospedagemelastica.com.br',
-      user: 'mrotrr_testando',
-      password: 'ZzMS6!so0&)nwx%t',
-      database: 'mrotrr_testando',
+      host: process.env.HOST,
+      user: process.env.USER,
+      password: process.env.PASSWORD,
+      database: process.env.DATABASE,
       charset: 'utf8',
     },
     pool: {
