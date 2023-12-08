@@ -35,5 +35,5 @@ app.use((error, request, response, next) => {
 
 const PORT = process.env.PORTA;
 app.listen(PORT, () => {
-    response.send(`Server is running on Port ${PORT}`);
+    console.log(`Server is running on Port ${PORT}`);
 });
